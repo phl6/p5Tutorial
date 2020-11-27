@@ -4,8 +4,8 @@ let bubble2;
 function setup() {
   createCanvas(1200, 800);
   background(153);
-  bubble1 = new Bubble();
-  bubble2 = new Bubble();
+  bubble1 = new Bubble(200, 200, 40);
+  bubble2 = new Bubble(400, 200, 20);
   console.log(bubble1.x, bubble1.y);
 }
 
