@@ -9,6 +9,8 @@ class Bubble{
         stroke(255);
         strokeWeight(4);
         noFill();
+        // noStroke();
+        // fill(255, 25);
         ellipse(this.x, this.y, this.r*2);
     }
 

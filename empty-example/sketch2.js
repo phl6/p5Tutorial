@@ -11,12 +11,16 @@ function draw(){
     background(0);
     stroke(255);
     strokeWeight(3);
-    noFill();
+    fill(51);
 
-    ellipse(100, 200, nums[0], nums[0]);
-    ellipse(200, 200, nums[2], nums[2]);
-    ellipse(200, 200, nums[index], nums[index]);
-    
+    // ellipse(100, 200, nums[0], nums[0]);
+    // ellipse(200, 200, nums[2], nums[2]);
+    // ellipse(200, 200, nums[index], nums[index]);
+
+    for(let i = 0; i < nums.length; i++){
+        ellipse(i*100+100, i+100, nums[i], nums[i]);
+    }
+
 }
 
 function mousePressed(){
